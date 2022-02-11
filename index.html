@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="./assets/styles/style.css" type="text/css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="players-box">
+        <!-- Area jogador 1 -->
+
+        <div id="player1Box">
+          <span>Wins: <span id="player1Wins">0</span></span>
+          <input id="player1NameInput" placeholder="Seu nome" />
+
+          <div class="current-selection-box player1">
+            <img class="selection-btn" id="player1Selection" />
+          </div>
+        </div>
+
+        <div>
+          <strong id="winnerAnnouncement"></strong>
+        </div>
+
+        <!-- Area jogador 2 -->
+
+        <div id="player2Box">
+          <span>Wins: <span id="player2Wins">0</span></span>
+          <span>CPU</span>
+
+          <div class="current-selection-box player2">
+            <img class="selection-btn" id="player2Selection" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Escolhas -->
+
+      <div class="selection-box">
+        <img
+          class="selection-btn"
+          id="rockBtn"
+          src="./assets/images/rock.svg"
+          alt="rock"
+        />
+
+        <img
+          class="selection-btn"
+          id="paperBtn"
+          src="./assets/images/paper.svg"
+          alt="paper"
+        />
+
+        <img
+          class="selection-btn"
+          id="scissorsBtn"
+          src="./assets/images/scissors.svg"
+          alt="scissors"
+        />
+      </div>
+
+      <!-- Reiniciar -->
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <!-- Como a classe vai ser usada no DOM, o arquivo da classse precisa ser importado ACIMA do arquivo do DOM -->
+    <script src="./assets/scripts/game.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>
