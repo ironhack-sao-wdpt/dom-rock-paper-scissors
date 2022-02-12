@@ -32,9 +32,9 @@ function handleSelectionClick(selection) {
   game.player2.pick(cpuPickRandom());
 
   // 4. Atualizar a imagem em cada círculo para ser igual à jogada escolhida dos dois jogadores
-  player1SelectionElement.src = `./assets/images/${game.player1.currentSelection.toLowerCase()}.svg`;
+  player1SelectionElement.src = `./assets/images/${game.player1.currentSelection.toLowerCase()}.png`;
 
-  player2SelectionElement.src = `./assets/images/${game.player2.currentSelection.toLowerCase()}.svg`;
+  player2SelectionElement.src = `./assets/images/${game.player2.currentSelection.toLowerCase()}.png`;
 
   // 6. Verifica o ganhador
   game.checkWinner();
@@ -60,7 +60,7 @@ function handleSelectionClick(selection) {
 
 function highlightSelection(target) {
   // 5. Destacar na barra de seleções a escolha do jogador 1
-  target.classList.add("selected");
+  target.parentElement.classList.add("selected");
 }
 
 rockBtnElement.addEventListener("click", (event) => {

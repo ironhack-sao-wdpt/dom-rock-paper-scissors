@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./assets/styles/style.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
   </head>
@@ -13,13 +20,13 @@
       <div class="players-box">
         <!-- Area jogador 1 -->
 
-        <div id="player1Box">
-          <span>Wins: <span id="player1Wins">0</span></span>
+        <div class="player-profile" id="player1Box">
           <input id="player1NameInput" placeholder="Seu nome" />
 
           <div class="current-selection-box player1">
-            <img class="selection-btn" id="player1Selection" />
+            <img class="img" id="player1Selection" />
           </div>
+          <span>Wins: <span id="player1Wins">0</span></span>
         </div>
 
         <div>
@@ -28,43 +35,49 @@
 
         <!-- Area jogador 2 -->
 
-        <div id="player2Box">
-          <span>Wins: <span id="player2Wins">0</span></span>
+        <div class="player-profile" id="player2Box">
           <span>CPU</span>
 
           <div class="current-selection-box player2">
-            <img class="selection-btn" id="player2Selection" />
+            <img class="img" id="player2Selection" />
           </div>
+          <span>Wins: <span id="player2Wins">0</span></span>
         </div>
       </div>
 
       <!-- Escolhas -->
 
       <div class="selection-box">
-        <img
-          class="selection-btn"
-          id="rockBtn"
-          src="./assets/images/rock.svg"
-          alt="rock"
-        />
+        <div class="selection-btn">
+          <img
+            class="img"
+            id="rockBtn"
+            src="./assets/images/rock.png"
+            alt="rock"
+          />
+        </div>
 
-        <img
-          class="selection-btn"
-          id="paperBtn"
-          src="./assets/images/paper.svg"
-          alt="paper"
-        />
+        <div class="selection-btn">
+          <img
+            class="img"
+            id="paperBtn"
+            src="./assets/images/paper.png"
+            alt="paper"
+          />
+        </div>
 
-        <img
-          class="selection-btn"
-          id="scissorsBtn"
-          src="./assets/images/scissors.svg"
-          alt="scissors"
-        />
+        <div class="selection-btn">
+          <img
+            class="img"
+            id="scissorsBtn"
+            src="./assets/images/scissors.png"
+            alt="scissors"
+          />
+        </div>
       </div>
 
       <!-- Reiniciar -->
-      <button id="restartBtn">Restart</button>
+      <button class="btn" id="restartBtn">Restart</button>
     </div>
 
     <!-- Como a classe vai ser usada no DOM, o arquivo da classse precisa ser importado ACIMA do arquivo do DOM -->
