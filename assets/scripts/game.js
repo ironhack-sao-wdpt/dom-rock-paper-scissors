@@ -68,6 +68,8 @@ class Game {
     this.player2.currentSelection = "";
     // Atribuir o gameOver para false
     this.gameOver = false;
+    // Resetar o vencedor
+    this.winner = undefined;
   }
 }
 
